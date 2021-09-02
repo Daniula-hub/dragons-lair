@@ -638,7 +638,7 @@ We will now set up our React application to request the dragon's treasure data f
       .get('/api/treasure/dragon')
       .then(treasure => {
         this.setState({
-          treasures: {
+          treasure: {
             ...this.state.treasures,
             dragon: treasure.data,
           },
